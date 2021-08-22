@@ -5,16 +5,18 @@ import { CommonModule } from '@angular/common';
 
 
 import { CategoryMenuComponent } from './category-menu/category-menu.component';
+import { PageTitleComponent } from './page-title/page-title.component';
 
 
 @NgModule({
-  declarations: [CategoryMenuComponent],
+  declarations: [CategoryMenuComponent, PageTitleComponent],
   imports: [
     CommonModule,
     RouterModule
   ],
   exports: [
-    CategoryMenuComponent
+    CategoryMenuComponent,
+    PageTitleComponent
   ]
 })
 export class ComponentsModule { }
